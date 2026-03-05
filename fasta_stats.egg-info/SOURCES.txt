@@ -1,0 +1,12 @@
+README.md
+setup.py
+fasta_stats/__init__.py
+fasta_stats/cli.py
+fasta_stats/parser_fasta.py
+fasta_stats/parser_stats.py
+fasta_stats.egg-info/PKG-INFO
+fasta_stats.egg-info/SOURCES.txt
+fasta_stats.egg-info/dependency_links.txt
+fasta_stats.egg-info/entry_points.txt
+fasta_stats.egg-info/top_level.txt
+tests/test_stats.py

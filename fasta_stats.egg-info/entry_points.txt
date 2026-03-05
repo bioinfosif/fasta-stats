@@ -1,0 +1,2 @@
+[console_scripts]
+fasta-stats = fasta_stats.cli:main

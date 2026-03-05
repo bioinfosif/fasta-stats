@@ -1,21 +1,19 @@
+import gzip
+
 def parser_fasta(filepath: str):
+    """Generator: yield (header, sequence) from FASTA or FASTA.gz"""
+    open_func = gzip.open if filepath.endswith(".gz") else open
+    header, sequence = "", ""
     
-    header = ""
-    sequences = ""
-    try:
-        with open(filepath) as f:
-            for line in f:
-                line = line.rstrip()
-                if line.startswith(">"):
-                    if header and sequences:
-                        yield (header, sequences)
-                    header = line
-                    sequences = ""
-                else:
-                    sequences += line
-            if header and sequences:
-                yield (header, sequences)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"File {filepath} not found")   
-    
-    return header, sequences
+    with open_func(filepath, "rt") as f:
+        for line in f:
+            line = line.rstrip()
+            if line.startswith(">"):
+                if header and sequence:
+                    yield (header, sequence)
+                header = line[1:]  # remove '>'
+                sequence = ""
+            else:
+                sequence += line
+        if header and sequence:
+            yield (header, sequence)
