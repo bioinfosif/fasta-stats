@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```bash
 pip install -e .
 ```
-## Usage
+##  Usage
 
 Basic usage:
 
@@ -74,14 +74,14 @@ GC content          : 41.23%
 N50                 : 3200
 Length histogram saved as length_hist.png
 ```
-## Testing
+##  Testing
 
 Tests are written with ```bash pytest```. To run tests:
 ```bash
 pytest -v tests/test_stats.py
 ```
 
-## Contributing
+##  Contributing
 
 Contributions are welcome!
 
@@ -93,11 +93,11 @@ Contributions are welcome!
 
 * Open a pull request with a description of your changes
 
-## License
+##  License
 
 MIT License © 2026 ndaosif / bioinfosif
 
-## Contact
+##  Contact
 
 GitHub: https://github.com/ndaosif/fasta-stats
 
