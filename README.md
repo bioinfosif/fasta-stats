@@ -3,7 +3,7 @@
 Bioinformatics tool to compute statistics for FASTA/FASTQ files (support gzipped files).
 
 **Author:** ndaosif / bioinfosif  
-**GitHub:** [https://github.com/ndaosif/fasta-stats](https://github.com/ndaosif/fasta-stats)
+**GitHub:** [https://github.com/ndaosif/fasta-stats](https://github.com/bioinfosif)
 
 ---
 
@@ -99,7 +99,7 @@ MIT License © 2026 ndaosif / bioinfosif
 
 ##  Contact
 
-GitHub: https://github.com/ndaosif/fasta-stats
+GitHub: https://github.com/bioinfosif
 
 Author: Mamadou Ndao — Bioinformatician
 
